@@ -1,0 +1,33 @@
+{
+  "name": "input-utils",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build/index.js",
+  "license": "MIT",
+  "author": {
+    "name": "Valentin Marmonier",
+    "email": "valentin.marmonier@gmail.com",
+    "url": "https://github.com/vaalentin"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "babel": "^5.8.23",
+    "tap-spec": "^4.1.0",
+    "tape": "^4.2.0"
+  },
+  "scripts": {
+    "prepublish": "npm run build",
+    "pretest": "npm run build",
+    "test": "node test | tap-spec",
+    "build": "babel src --out-file build/index.js"
+  },
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/vaalentin/input-utils.git"
+  },
+  "homepage": "https://github.com/vaalentin/input-utils",
+  "bugs": {
+    "url": "https://github.com/vaalentin/input-utils/issues"
+  }
+}
